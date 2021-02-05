@@ -2,7 +2,7 @@
 
 Bash and Terraform scripts to automate standing up hosts in Linode. 
 
-FYI: Each instance stood up is an Ubuntu 20 DigitalOcean instance (you can change this in the .tf file)
+FYI: Each instance stood up is an Ubuntu 20 Linode nanode 1GB instance in the us-west region (you can change these in the .tf file)
 
 The scripts were built to be run on either Linux or macOS hosts. The scripts will first check to see if you have installed terraform and if not, it will attempt to install it for you before proceeding.
 
