@@ -1,4 +1,4 @@
-# Linode_Terraform_Scripts
+# Linode Terraform Scripts
 
 Bash and Terraform scripts to automate standing up hosts in Linode. 
 
