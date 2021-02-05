@@ -43,7 +43,6 @@ sed -i -e 's|publickeyhere|'"$pubKey"'|g' init.tf
 sed -i -e 's|privatekeyhere|'"$privKey"'|g' init.tf
 sed -i -e "s/127.0.0.1/$adminIP/g" init.tf
 sed -i -e "s/mylinodetoken/$linodeToken/g" init.tf
-sed -i -e "s/usernamehere/$userName/g" init.tf
 
 terraform init
 echo "====>Running terraform plan for the new Linode host with ufw firewall..."
