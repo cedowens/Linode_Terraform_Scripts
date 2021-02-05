@@ -35,6 +35,12 @@ resource "linode_instance" "myc2-1" {
 		"sudo ufw allow from 10.0.0.0 to any port 80",
 		"sudo ufw allow from 10.0.0.0 to any port 443",
 		"sudo ufw --force enable",
+		"sudo apt install -y docker.io",
+		"sudo systemctl enable docker --now",
+		"sudo wget 'https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)' -O /usr/local/bin/docker-compose",
+		"sudo chmod +x /usr/local/bin/docker-compose",
+		"sudo apt-get install git",
+		"git clone https://github.com/cedowens/C2_Cradle",
         ]
 }
 
